@@ -8,15 +8,20 @@ Build a simple analytics pipeline to process LLM application logs and produce a 
 ## Requirements
 
 - Working code that processes the data:
-  I have included two python files to process the data. `llm_log_pipeline.py` was the version I used on Google Colab to transform the json data and upload it to a BigQuery table,
-  but sharing this is a bit harder, so I've also included an executable `llm_log_pipeline_csv.py` that will output the results as a csv file if you would like to upload it to a
-  BigQuery or database of your own.
+
+I have included two python files to process the data. `llm_log_pipeline.py` was the version I used on Google Colab to transform the json data and upload it to a BigQuery table,
+but sharing this is a bit harder, so I've also included an executable `llm_log_pipeline_csv.py` that will output the results as a csv file if you would like to upload it to a
+BigQuery or database of your own.
+
 - A database to store the transformed data:
-  The data is currently stored in a sandbox BigQuery that I created. I've also created a summary table for the visualization in the runnable `daily_llm_metrics.sql` file
-  (runnable in BigQuery, some functions might not work in all SQL languages).
+
+The data is currently stored in a sandbox BigQuery that I created. I've also created a summary table for the visualization in the runnable `daily_llm_metrics.sql` file
+(runnable in BigQuery, some functions might not work in all SQL languages).
+
 - At least one chart/visualization:
-  Included in the `daily_llm_metrics.pdf` is a dashboard I created which is from Looker Studio. I have made it viewable and is interactable at the url:
-  https://lookerstudio.google.com/reporting/2c1175ce-5a27-4ec1-906f-1f18d7c622fe
+
+Included in the `daily_llm_metrics.pdf` is a dashboard I created which is from Looker Studio. I have made it viewable and is interactable at the url:
+https://lookerstudio.google.com/reporting/2c1175ce-5a27-4ec1-906f-1f18d7c622fe
 
 ## Solution
 
